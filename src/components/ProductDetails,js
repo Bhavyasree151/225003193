@@ -1,0 +1,23 @@
+import React from 'eact';
+import { useParams } from 'eact-router-dom';
+import { Grid, Typography } from '@material-ui/core';
+import ProductCard from './ProductCard';
+
+const ProductDetails = () => {
+  const { id } = useParams();
+  const product = products.find((product) => product.id === id);
+
+  if (!product) {
+    return <Typography variant="h5">Product not found</Typography>;
+  }
+
+  return (
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
+        <ProductCard product={product} />
+      </Grid>
+    </Grid>
+  );
+};
+
+export default ProductDetails;

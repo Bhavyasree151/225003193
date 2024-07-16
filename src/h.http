@@ -1,0 +1,11 @@
+### Register with the Test Server
+POST http://20.244.56.144/test/register
+Content-Type: application/json
+
+{
+  "companyName": "Affordmed",
+  "ownerName": "Kuruba Bhavyasree",
+  "rollNo": "225003193",
+  "ownerEmail": "225003193@sastra.ac.in",
+  "accessCode": "LGcHvG"
+}
